@@ -3,6 +3,8 @@ import './App.css';
 import MyNavbar from "./components/MyNavbar";
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import SingleArticle from "./components/SingleArticle"
+import MyFooter from "./components/MyFooter";
+
 function App() {
   return (
     <BrowserRouter>
@@ -11,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/articles/:id" element={<SingleArticle/>} />
         </Routes>
+        <MyFooter />
       </> 
     </BrowserRouter>
   );
